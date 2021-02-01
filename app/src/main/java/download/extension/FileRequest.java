@@ -4,11 +4,6 @@ import download.base.AbstractHttpRequest;
 import download.base.Request;
 
 
-public class FileRequest<T> extends AbstractHttpRequest {
-
-    @Override
-    public T connect(Request request) {
-        return (T)parseNetResult(request);
-    }
+public class FileRequest extends AbstractHttpRequest {
 
 }
